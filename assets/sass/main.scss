@@ -482,9 +482,14 @@
 			padding: 0.5em;
     	margin-left: 1em;
     	border: solid;
+			border-radius: 0.5em;
+			opacity: 60%;
+			background: grey;
 
 			&.current {
-				order: solid 3px #b3ae0b;
+				border: solid 3px #b3ae0b;
+				opacity: 100%;
+    		background: grey;
 			}
 		}
 	}
