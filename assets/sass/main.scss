@@ -302,7 +302,9 @@
 		}
 
 		@include breakpoint('<=mobile') {
-			height: 1600px;
+			&.form {
+				height: 1600px;
+			}
 		}
 	}
 

@@ -294,7 +294,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.container .form{
+			.container.form {
 				height: 1600px;
 			}
 
