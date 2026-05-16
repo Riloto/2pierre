@@ -266,6 +266,10 @@
 		}
 	}
 
+	#first h3 {
+		font-weight: bold;
+	}
+
 /* Container */
 
 	.container {
@@ -295,6 +299,10 @@
 
 		@include breakpoint('<=narrow') {
 			width: 100% !important;
+		}
+
+		@include breakpoint('<=mobile') {
+			height: 1600px;
 		}
 	}
 
