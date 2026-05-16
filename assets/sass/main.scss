@@ -281,6 +281,11 @@
 			width: (1360px * 0.75);
 		}
 
+		&.map {
+			width: 50%;
+			height: 300px;
+		}
+
 		@include breakpoint('<=wide') {
 			width: 1200px;
 
