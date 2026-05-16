@@ -286,6 +286,10 @@
 			height: 300px;
 		}
 
+		&.form {
+			height: 1250px;
+		}
+
 		@include breakpoint('<=wide') {
 			width: 1200px;
 
@@ -308,7 +312,7 @@
 
 		@include breakpoint('<=mobile') {
 			&.form {
-				height: 1600px;
+				height: 1600px !important;
 			}
 		}
 	}
