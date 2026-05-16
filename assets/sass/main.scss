@@ -373,6 +373,10 @@
 		&.fit {
 			display: block;
 			width: 100%;
+
+			img {
+				height: 13em;
+			}
 		}
 
 		&.left {
@@ -422,6 +426,10 @@
 		li {
 			display: inline-block;
 			padding-left: 0.75em;
+		}
+
+		p.hidden {
+    	color: transparent;
 		}
 
 		a {
