@@ -1671,22 +1671,36 @@ input, select, textarea {
 		padding-left: 0;
 	}
 
-		ul.menu li {
+		ul.menu li { 
 			display: inline-block;
 			margin: 0 0 0 0.5em;
-			padding: 0.5em;
+			/*padding: 0.5em;*/
+			padding: 15px 32px;
+			text-align: center;
+			cursor: pointer;
     	margin-left: 1em;
-    	border: solid;
-			border-radius: 0.5em;
+    	border: none;
+			border-radius: 8px;
+			transition: all 0.3s ease;
+  		/*agregamos sombra interior*/
+  		box-shadow: inset -2px -2px 6px #000000;
 			opacity: 60%;
-			background: grey;
+			background: #7a7a7a;
 		}
 
 			ul.menu li.current {
-				border: solid 3px #b3ae0b;
+				/*border: solid 3px #b3ae0b;*/
     		opacity: 90%;
-    		background: grey;
+    		background: #666666;
+				transform: scale(1.05);
 			}
+
+			ul.menu li:hover {
+				/* Darker Grey */
+				background: #666666;
+				transform: scale(1.05);
+			}
+
 
 /* Actions */
 
@@ -2496,9 +2510,10 @@ input, select, textarea {
 
 			ul.menu li {
 				border: 0;
-				padding: 0;
+				padding: 0.5em;
 				display: block;
 				margin: 1em 0 1em 0;
+				font-size: 10px;
 			}
 
 		/* Header */
