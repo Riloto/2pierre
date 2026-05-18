@@ -1575,6 +1575,10 @@ input, select, textarea {
 			border-radius: 0.5em;
 		}
 
+		.image img.logo {
+			width: 30%;
+		}
+
 		.image.featured {
 			display: block;
 			width: 100%;
@@ -2543,5 +2547,10 @@ input, select, textarea {
 				.main > .content h3 {
 					font-size: 1.25em;
 				}
+
+		/* Image */
+			.image img.logo {
+				width: 100%;
+			}
 
 	}
