@@ -261,12 +261,21 @@ input, select, textarea {
 		}
 
 		.container.map {
-			width: 50%;
+			width: 30em;
 			height: 300px;
 		}
 
 		.container.form {
 			height: 1250px;
+		}
+
+		.container .discount-code {
+			color: #000;
+			background-color: #fff;
+			border: red dashed;
+			font-weight: bold;
+			justify-self: center;
+			width: 35em;
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -2515,8 +2524,11 @@ input, select, textarea {
 			ul.menu li {
 				border: 0;
 				padding: 0.5em;
-				display: block;
-				margin: 1em 0 1em 0;
+				display: flex;
+    		align-items: center;
+    		justify-content: center;
+				/*margin: 1em 0 1em 0;*/
+				margin: 0 0.5em 0 0.5em;
 				font-size: 10px;
 			}
 
