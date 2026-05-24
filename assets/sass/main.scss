@@ -290,6 +290,15 @@
 			height: 1250px;
 		}
 
+		> .discount-code {
+			color: #000;
+			background-color: #fff;
+			border: red dashed;
+			font-weight: bold;
+			justify-self: center;
+			width: 35em;
+		}
+
 		@include breakpoint('<=wide') {
 			width: 1200px;
 
@@ -313,6 +322,10 @@
 		@include breakpoint('<=mobile') {
 			&.form {
 				height: 1600px !important;
+			}
+
+			> .discount-code {
+				width: 100%;
 			}
 		}
 	}

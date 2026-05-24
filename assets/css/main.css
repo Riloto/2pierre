@@ -316,6 +316,9 @@ input, select, textarea {
 				height: 1600px !important;
 			}
 
+			.container .discount-code {
+				width: 100%;
+			}
 		}
 
 /* Row */
