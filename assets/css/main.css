@@ -279,6 +279,11 @@ input, select, textarea {
 			width: 35em;
 		}
 
+		.container.cronograma > p {
+			text-align: justify;
+			line-height: 57px;
+		}
+
 		@media screen and (max-width: 1680px) {
 
 			.container {
@@ -320,6 +325,11 @@ input, select, textarea {
 			.container .discount-code {
 				width: 100%;
 			}
+
+			.container.cronograma > p {
+				line-height: 33px;
+			}
+
 		}
 
 /* Row */
