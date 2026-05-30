@@ -2256,7 +2256,7 @@ input, select, textarea {
 		margin: 0;
 		background-image: url("images/overlay.png"), url("../../images/pic03_1.png");
 		background-size: auto, cover;
-		background-position: top left, center center;
+		background-position: top;
 		background-repeat: repeat, no-repeat;
 		padding: 14em 0 14em 0;
 		text-align: center;
