@@ -156,7 +156,8 @@ input, select, textarea {
 		-webkit-transition: border-bottom-color 0.25s ease-in-out;
 		-ms-transition: border-bottom-color 0.25s ease-in-out;
 		transition: border-bottom-color 0.25s ease-in-out;
-		color: inherit;
+		/*color: inherit;*/
+		color: #fff;
 		text-decoration: none;
 		border-bottom: dotted 1px rgba(0, 0, 0, 0.25);
 	}
@@ -2253,7 +2254,7 @@ input, select, textarea {
 	#header {
 		position: relative;
 		margin: 0;
-		background-image: url("images/overlay.png"), url("../../images/pic03.jpg");
+		background-image: url("images/overlay.png"), url("../../images/pic03_1.png");
 		background-size: auto, cover;
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
