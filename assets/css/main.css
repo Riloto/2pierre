@@ -1614,9 +1614,9 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.fit img {
+			/*.image.fit img {
 				height: 13em;
-			}
+			}*/
 
 		.image.left {
 			float: left;
