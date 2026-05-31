@@ -229,6 +229,10 @@ input, select, textarea {
 			padding: 0.25em 0 0.5em 0;
 		}
 
+	header.home {
+		margin-top: 5em;
+	}
+
 	footer {
 		padding-top: 1.5em;
 	}
@@ -2289,6 +2293,7 @@ input, select, textarea {
 			font-size: 2.25em;
 			line-height: 1.25em;
 			margin-bottom: 0;
+			font-weight: 800;
 		}
 
 		#header header p {
@@ -2298,6 +2303,7 @@ input, select, textarea {
 			font-size: 1.25em;
 			line-height: 1.5em;
 			text-align: center;
+			font-weight: 500;
 		}
 
 		#header footer {
@@ -2575,7 +2581,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 6em 20px 6em 20px;
+				padding: 6em 20px 0 20px;
 				background-size: 45em 23em;
 			}
 
