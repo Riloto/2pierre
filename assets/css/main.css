@@ -2264,7 +2264,7 @@ input, select, textarea {
 	#header {
 		position: relative;
 		margin: 0;
-		background-image: url("images/overlay.png"), url("../../images/pic03_1.png");
+		background-image: url("images/overlay.png"), url("../../images/home.png");
 		background-size: auto, cover;
 		background-position: top;
 		background-repeat: repeat, no-repeat;
@@ -2558,6 +2558,7 @@ input, select, textarea {
 
 			#header {
 				padding: 6em 20px 6em 20px;
+				background-size: 45em 23em;
 			}
 
 				#header > header {
