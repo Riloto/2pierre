@@ -2324,13 +2324,14 @@ input, select, textarea {
 			line-height: 1.25em;
 			margin-bottom: 0;
 			font-weight: 800;
+			text-shadow: 3px 3px black;
 		}
 
 		#header header p {
 			margin-top: 1.25em;
 			font-weight: 100;
 			padding: 0;
-			font-size: 1.5em;
+			font-size: 2em;
 			line-height: 1.5em;
 			text-align: center;
 			font-weight: 500;
@@ -2514,7 +2515,7 @@ input, select, textarea {
 			}
 
 				#header header p {
-					margin-top: 0em;
+					margin-top: -0.75em;
 					position:relative;
 					top: 2em;
 				}
@@ -2635,6 +2636,10 @@ input, select, textarea {
 				.main > header h2 {
 					font-size: 1.5em;
 				}
+			
+			.main > header p {
+				margin: 0.5em 0 0 0;
+			}
 
 			.main > .content {
 				padding: 3em 20px 3em 20px;
