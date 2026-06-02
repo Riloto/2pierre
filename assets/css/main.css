@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic");
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
+@import "compass/css3";
+
 /*
 	Tessellate by HTML5 UP
 	html5up.net | @ajlkn
@@ -1752,30 +1754,30 @@ input, select, textarea {
 		ul.menu li { 
 			display: inline-block;
 			margin: 0 0 0 0.5em;
-			/*padding: 0.5em;*/
-			padding: 15px 32px;
+			padding: 0;
+			/*padding: 15px 32px;*/
 			text-align: center;
 			cursor: pointer;
     	margin: 0.5em;
     	border: none;
-			border-radius: 8px;
+			/*border-radius: 8px;*/
 			transition: all 0.3s ease;
   		/*agregamos sombra interior*/
-  		box-shadow: inset -2px -2px 6px #000000;
-			opacity: 70%;
-			background: #7a7a7a;
+  		/*box-shadow: inset -2px -2px 6px #000000;*/
+			opacity: 30%;
+			/*background: #7a7a7a;*/
 		}
 
 			ul.menu li.current {
 				/*border: solid 3px #b3ae0b;*/
     		opacity: 100%;
-    		background: #666666;
+    		/*background: #666666;*/
 				transform: scale(1.05);
 			}
 
 			ul.menu li:hover {
 				/* Darker Grey */
-				background: #666666;
+				/*background: #666666;*/
 				transform: scale(1.05);
 			}
 
@@ -2666,3 +2668,47 @@ input, select, textarea {
 			width: 100%;
 		}
 	}
+
+.boton {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.boton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 4px;
+  background: linear-gradient(120deg, #6559ae, #ff7159, #6559ae);
+  background-size: 400% 400%;
+  animation: gradient 3s ease-in-out infinite;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.boton span {
+  display: inline-block;
+  background: linear-gradient(120deg, #6559ae, #ff7159, #6559ae);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s ease-in-out infinite;
+	font-weight: 500;
+}
+
+@keyframes gradient {
+  0%   { background-position: 14% 0%; }
+  50%  { background-position: 87% 100%; }
+  100% { background-position: 14% 0%; }
+}
