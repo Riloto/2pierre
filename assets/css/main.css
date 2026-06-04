@@ -278,6 +278,7 @@ input, select, textarea {
 
 	.post-header p {
 		font-size: 1.5em !important;
+		justify-self: center;
 	}
 
 	.post-header h2 {
