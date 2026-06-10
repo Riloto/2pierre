@@ -386,6 +386,10 @@ input, select, textarea {
 			box-sizing: border-box;
 		}
 
+		.row.nosotros {
+			flex-wrap: nowrap;
+		}
+
 		.row.gtr-uniform > * > :last-child {
 			margin-bottom: 0;
 		}
@@ -1677,6 +1681,14 @@ input, select, textarea {
 				width: auto;
 			}
 
+		img {
+			width: 100%;
+		}
+
+		img.reverse-image{
+			transform: scaleX(-1);
+		}
+
 /* List */
 
 	ul {
@@ -2705,6 +2717,10 @@ dialog h2 {
 				margin-top: unset;
 			}
 
+			img.normal-image, img.reverse-image {
+				width: 100%;
+			}
+
 		.feature-icon .icon {
 			width: 1.5em; 
 			height: 1.5em;
@@ -2731,6 +2747,11 @@ dialog h2 {
 			top: 2em;
 			right: 2em;
 		}
+
+		.boton-popup {
+			padding: 1em 3em;
+		}
+
 	}
 
 .boton {
