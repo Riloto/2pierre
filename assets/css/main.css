@@ -390,6 +390,10 @@ input, select, textarea {
 			flex-wrap: nowrap;
 		}
 
+		.row.galeria {
+			justify-content: center;
+		}
+
 		.row.gtr-uniform > * > :last-child {
 			margin-bottom: 0;
 		}
@@ -2446,6 +2450,10 @@ input, select, textarea {
 
 	.spotify-player {
 		width: 70%;
+	}
+
+	h3.title {
+		justify-self: center;
 	}
 
 	h3.nosotros-title {
