@@ -2436,6 +2436,48 @@ input, select, textarea {
 		width: 70%;
 	}
 
+	h3.nosotros-title {
+		margin-top: 1em;
+		justify-self: center;
+	}
+
+/* Estilos del Pop-up*/
+dialog {
+  padding: 3em;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  text-align: justify;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro detrás del popup */
+}
+
+dialog h2 {
+	color: #000 !important;
+}
+
+.boton-popup {
+  display: block;
+  justify-self: center;
+  padding: 1em 5em;
+  font-size: 1em;
+  font-weight: 800;
+}
+
+.btn-cerrar {
+	float: right;
+	padding: 0;
+	color: #000 !important;
+	position: fixed;
+	top: 2em;
+	right: 9.5em;
+	font-size: 1em;
+	font-weight: 800;
+}
+
 /* Wide */
 
 	@media screen and (max-width: 1680px) {
@@ -2678,6 +2720,16 @@ input, select, textarea {
 			width: 6em !important;
 			height: 5em !important;
 			line-height: 5em !important;
+		}
+
+		dialog {
+			width: 90%;
+			padding: 2.5em;
+		}
+
+		.btn-cerrar {
+			top: 2em;
+			right: 2em;
 		}
 	}
 
