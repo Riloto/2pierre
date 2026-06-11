@@ -1689,7 +1689,7 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		img.normal-image, img.reverse-image {
+		img.normal-image, img.reverse-image, img.pedida-almeria, img.pedida-irlanda {
 			cursor: pointer;
 		}
 
