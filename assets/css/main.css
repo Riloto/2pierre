@@ -1689,6 +1689,10 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		img.normal-image, img.reverse-image {
+			cursor: pointer;
+		}
+
 		img.reverse-image{
 			transform: scaleX(-1);
 		}
