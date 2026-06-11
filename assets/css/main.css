@@ -4,6 +4,13 @@
 
 @import "compass/css3";
 
+@font-face {
+    font-family: 'Coronet';
+    src: url('../webfonts/Coronet.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*
 	Tessellate by HTML5 UP
 	html5up.net | @ajlkn
@@ -230,6 +237,8 @@ input, select, textarea {
 			display: block;
 			margin: 0;
 			padding: 0.25em 0 0.5em 0;
+			font-family: "Coronet", sans-serif;
+			font-size: 2em;
 		}
 
 	header.home {
@@ -280,11 +289,13 @@ input, select, textarea {
 	}
 
 	.post-header p {
+		font-family: "Great Vibes", cursive !important;
 		font-size: 1.5em !important;
 		justify-self: center;
 	}
 
 	.post-header h2 {
+		font-family: "Great Vibes", cursive !important;
 		font-size: 2em !important;
 	}
 
@@ -2393,6 +2404,7 @@ input, select, textarea {
 				font-size: 2.25em;
 				font-weight: 100;
 				margin-bottom: 0;
+				font-family: "Coronet", sans-serif;
 			}
 
 			.main > header p {
