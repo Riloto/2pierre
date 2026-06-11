@@ -2463,6 +2463,7 @@ input, select, textarea {
 
 	h3.title {
 		justify-self: center;
+		font-weight: 500;
 	}
 
 	h3.nosotros-title {
@@ -2756,6 +2757,10 @@ dialog h2 {
 			line-height: 5em !important;
 		}
 
+		.boton span {
+			font-weight: 800;
+		}
+
 		dialog {
 			width: 90%;
 			padding: 2.5em;
@@ -2969,7 +2974,7 @@ dialog h2 {
 
 /* Responsive */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 736px) {
 
     #timeline {
         margin-top: 5em;
