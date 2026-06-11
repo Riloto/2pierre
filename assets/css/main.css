@@ -1,6 +1,7 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic");
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 
 @import "compass/css3";
 
@@ -1801,27 +1802,27 @@ input, select, textarea {
 			/*padding: 15px 32px;*/
 			text-align: center;
 			cursor: pointer;
-    	/*margin: 0.5em;*/
+    	margin: 0 1.5em;
     	border: none;
 			/*border-radius: 8px;*/
 			transition: all 0.3s ease;
   		/*agregamos sombra interior*/
   		/*box-shadow: inset -2px -2px 6px #000000;*/
-			opacity: 30%;
+			opacity: 100%;
 			/*background: #7a7a7a;*/
 		}
 
 			ul.menu li.current {
 				/*border: solid 3px #b3ae0b;*/
-    		opacity: 100%;
+    		opacity: 30%;
     		/*background: #666666;*/
-				transform: scale(1.05);
+				transform: scale(1.15); 
 			}
 
 			ul.menu li:hover {
 				/* Darker Grey */
 				/*background: #666666;*/
-				transform: scale(1.05);
+				transform: scale(1.15);
 			}
 
 
@@ -2699,6 +2700,10 @@ dialog h2 {
 
 		/* Menu */
 
+			nav#nav {
+				max-width: 110%;
+			}
+
 			ul.menu li {
 				border: 0;
 				/*padding: 0.5em;*/
@@ -2767,7 +2772,7 @@ dialog h2 {
 		}
 
 		.boton {
-			width: 6em !important;
+			width: 6.5em !important;
 			height: 5em !important;
 			line-height: 5em !important;
 		}
@@ -2827,9 +2832,9 @@ dialog h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient 3s ease-in-out infinite;
-	font-weight: 500;
-	font-family: fantasy;
-	font-size: 0.8em;
+	font-family: "Ultra", serif;
+  font-weight: 400;
+	font-size: 0.65em;
 }
 
 @keyframes gradient {
