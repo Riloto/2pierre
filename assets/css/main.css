@@ -283,6 +283,18 @@ input, select, textarea {
 		/*font-weight: bold;*/
 	}
 
+	.banner h3 {
+		font-family: "Coronet", sans-serif;
+		font-size: 2.5em !important;
+		font-weight: 800;
+	}
+
+	.banner p {
+		font-family: "Coronet", sans-serif;
+    font-size: 2.25em;
+    font-weight: 800;
+	}
+
 	.post-header {
 		font-family: "Great Vibes", cursive;
   	font-weight: 400;
@@ -2801,6 +2813,17 @@ dialog p {
 			padding: 1em 3em;
 		}
 
+		.banner h3 {
+			font-family: "Coronet", sans-serif;
+			font-size: 2.25em;
+			font-weight: 500;
+		}
+
+		.banner p {
+			font-family: "Coronet", sans-serif;
+			font-size: 1.5em;
+			font-weight: 500;
+		}
 	}
 
 .boton {
