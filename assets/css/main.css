@@ -263,7 +263,7 @@ input, select, textarea {
 		}
 
 	#first h2 {
-		font-weight: 800;
+		font-weight: 500; 
 	}
 
 	#first p {
@@ -318,7 +318,7 @@ input, select, textarea {
 		}
 
 		.container.form {
-			height: 1250px;
+			height: 50em;
 		}
 
 		.container .discount-code {
@@ -375,7 +375,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.container.form {
-				height: 1600px !important;
+				height: 91em !important;
 			}
 
 			.container .discount-code {
@@ -2826,7 +2826,7 @@ dialog h2 {
   pointer-events: none;
 }
 
-.boton span {
+.boton span, .boton.playlist {
   display: inline-block;
   background: linear-gradient(120deg, #6559ae, #ff7159, #6559ae);
   background-size: 400% 400%;
@@ -2836,6 +2836,10 @@ dialog h2 {
 	font-family: "Ultra", serif;
   font-weight: 400;
 	font-size: 0.65em;
+}
+
+.boton.playlist {
+	width: 25em !important;
 }
 
 @keyframes gradient {
