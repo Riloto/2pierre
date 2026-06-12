@@ -268,7 +268,7 @@ input, select, textarea {
 
 	#first p {
     padding: 0;
-    font-size: 1.25em;
+    font-size: 2em;
     line-height: 1em;
     font-weight: 300;
 		text-align: justify;
@@ -333,6 +333,7 @@ input, select, textarea {
 		.container.cronograma > p {
 			text-align: justify;
 			line-height: 57px;
+			margin-top: 1.5em;
 		}
 
 		.container.cronograma a {
@@ -2735,7 +2736,7 @@ dialog h2 {
 			}
 
 				.main > header h2 {
-					font-size: 1.5em;
+					font-size: 2.25em;
 					margin: 1em;
 				}
 			
