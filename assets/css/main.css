@@ -2507,6 +2507,10 @@ dialog h2 {
 	font-weight: 500;
 }
 
+dialog p {
+	font-size: 1em;
+}
+
 .boton-popup {
   display: block;
   justify-self: center;
