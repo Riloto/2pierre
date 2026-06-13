@@ -405,7 +405,7 @@ input, select, textarea {
 			}
 
 			.container.cronograma > p {
-				line-height: 33px;
+				line-height: 1.5em;
 			}
 
 		}
@@ -2552,6 +2552,19 @@ dialog p {
 	outline: none;
 }
 
+.logo-text {
+	font-family: 'Coronet', sans-serif;
+  font-size: 2em;
+}
+
+.logo-text > h3.title {
+	font-family: auto;
+}
+
+.logo-text > h3.simbol {
+	font-family: auto;
+}
+
 /* Wide */
 
 	@media screen and (max-width: 1680px) {
@@ -2760,6 +2773,23 @@ dialog p {
 				padding: 0.5em 20px 3em 20px;
 			}
 
+			.main > header.hoteles {
+				padding: 0.5em 20px 0.5em 20px;
+			}
+
+			.main > header.hoteles h2 {
+				font-size: 3.25em;
+			}
+
+			.main > header.apartamentos {
+				padding: 0.5em 20px 2em 20px;
+			}
+
+			.main > header.apartamentos h2 {
+				font-size: 3.25em;
+				margin: 0;
+			}
+
 				.main > header h2 {
 					font-size: 2.25em;
 					margin: 1em;
@@ -2776,6 +2806,10 @@ dialog p {
 				.main > .content h3 {
 					font-size: 1.25em;
 				}
+
+			h2.pedida{
+				margin: 0em !important;
+			}
 
 		/* Image */
 			.image img.logo {
