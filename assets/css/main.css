@@ -267,6 +267,10 @@ input, select, textarea {
 		text-align: justify; 
 	}
 
+	#first .subtitle {
+    text-align: center;
+	}
+
 	#first .limit {
 		text-align: center; 
 	}
