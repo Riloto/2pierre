@@ -1734,6 +1734,12 @@ input, select, textarea {
 			transform: scaleX(-1);
 		}
 
+		img.dos-pi-erre {
+			display: block;
+			width: 50%;
+			justify-self: center;
+			border-radius: 1em;
+		}
 /* List */
 
 	ul {
@@ -2533,6 +2539,19 @@ dialog p {
 	font-size: 1em;
 }
 
+dialog h3.simbol {
+	font-family: auto;
+	color: #000;
+  font-weight: 800;
+  width: 4em;
+  height: 4em;
+  border: 2px solid;
+  border-radius: 50%;
+  text-align: center;
+  justify-self: center;
+  line-height: 4em;
+}
+
 .boton-popup {
   display: block;
   justify-self: center;
@@ -2562,16 +2581,6 @@ dialog p {
 	font-family: auto;
 }
 
-.logo-text > h3.simbol {
-	font-family: auto;
-	justify-self: center;
-  width: 3em;
-  height: 3em;
-  background-color: darkcyan;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 3em;
-}
 
 /* Wide */
 
@@ -2802,6 +2811,10 @@ dialog p {
 					font-size: 2.25em;
 					margin: 1em;
 				}
+
+				.main > header h2.logo {
+					margin: 0 !important;
+				}	
 			
 			.main > header p {
 				margin: 0.5em 0 0 0;

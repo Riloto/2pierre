@@ -101,13 +101,13 @@
 							<div class="col-6 col-12-narrow">
 									<section>
 										<div class="col-6"><img class="abrirPopup2 reverse-image" src="images/mirada-vendimia.jpg" alt="" /></div>
-										<h3 class="nosotros-title">Nuestra historia según Ricardo</h3>
+										<h3 class="nosotros-title">Nuestra historia según Richi</h3>
 										<footer>
-											<button class="abrirPopup2 boton-popup">Ricardo</button>
+											<button class="abrirPopup2 boton-popup">Richi</button>
 
 											<dialog id="miPopup2">
 													<button class="btn-cerrar" id="cerrarPopup2">X</button>
-													<h2>Ricardo</h2>
+													<h2>Richi</h2>
 													<p>Recuerdo tu voz en el andén. Aquel acento distinto y ese pelo negro tan brillante. Quien me diría que días más tarde acabaría teniendo la increíble suerte de conocerte. Nos conocimos por una de esas extrañas carambolas del destino donde dos personas se encuentran sin ser conscientes de que esa casualidad va a cambiarles la vida.</p>
 													<p>Recuerdo que lo primero que pensé fue “Que chica más simpática, acabamos de conocernos y como si fuéramos viejos amigos”
 														Lo que de verdad me enamoró fue tu profunda mirada, la forma tan suave en que me hablabas y lo cómodo que me encontraba a tu lado sin saber el porqué.</p>
@@ -146,8 +146,14 @@
 			</section>
 
 			<section id="second" class="main">
-				<div class="content dark style5">
+				<header>
 					<div class="container">
+						<h2 class="logo">Queremos presentaros nuestro logo</h2>
+						<p>Hemos creado este logo de manera que nos represente como pareja. Esta imagen nos acompañará durante toda la boda</p>
+					</div>
+				</header>
+				<div class="content dark style5">
+					<!-- <div class="container">
 						<div class="row">
 							<div class="col-4 col-12-narrow">
 								<section class="logo-section">
@@ -169,6 +175,42 @@
 								</section>
 							</div>
 						</div>
+					</div> -->
+					<div class="container">
+						<!-- <p>Queremos presentaros nuestro logo.</p>
+						<p>Hemos creado este logo de manera que nos represente como pareja. Esta imagen nos acompañará durante toda la boda. </p> -->
+						<img class="abrirPopup5 dos-pi-erre" src="images/2pir.jpeg" alt="" />
+
+						<footer>
+							<button class="abrirPopup5 boton-popup">Descubre su significado</button>
+												
+							<dialog id="miPopup5">
+								<button class="btn-cerrar" id="cerrarPopup5">X</button>
+								<h2>2πR</h2>
+									<p>Nuestro logo es mucho más que una combinación de símbolos: es una pequeña fórmula que habla de nosotros.</p>
+									<p>El 2 representa que somos dos personas que han decidido caminar juntas; el π es Paloma, a quien mucha gente llama cariñosamente “Pi”; y la R es Richi, el nombre con el que todos conocen a Ricardo.</p>
+									<p>Pero además, unidos forman algo muy especial, la fórmula del perímetro de una circunferencia.</p>
+									<h3 class="simbol">2πR</h3>
+									<p>Una línea infinita que vuelve siempre al mismo lugar, como esos vínculos que no tienen principio ni final y que se construyen paso a paso alrededor de lo importante: el amor, la complicidad y las personas que nos acompañan.</br >
+										Nos gustó pensar que nuestro símbolo también podía representar eso: un círculo completo, como esos vinculos que no tienen un final, una historia que se construye día a día.</p>
+									<p>Gracias por formar parte de esta circunferencia perfecta que dibujamos junto a todos vosotros.</p>
+							</dialog>
+
+							<script>
+								const abrirPopupBtn5 = document.querySelectorAll('.abrirPopup5');
+								const cerrarPopupBtn5 = document.getElementById('cerrarPopup5');
+								const miPopup5 = document.getElementById('miPopup5');
+
+								abrirPopupBtn5.forEach(elemento => {
+										elemento.addEventListener('click', () => {
+												miPopup5.showModal();
+										});
+								});
+								cerrarPopupBtn5.addEventListener('click', () => {
+									miPopup5.close();
+								});
+							</script>
+						</footer>
 					</div>
 				</div>
 			</section>
