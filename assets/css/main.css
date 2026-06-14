@@ -292,6 +292,11 @@ input, select, textarea {
 		/*font-weight: bold;*/
 	}
 
+	h2.intro {
+		margin: 0 0 2em 0 !important;
+    font-size: 2.5em !important;
+	}
+
 	.banner h3 {
 		font-family: "Coronet", sans-serif;
 		font-size: 2.5em !important;
