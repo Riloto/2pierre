@@ -2564,6 +2564,13 @@ dialog p {
 
 .logo-text > h3.simbol {
 	font-family: auto;
+	justify-self: center;
+  width: 3em;
+  height: 3em;
+  background-color: darkcyan;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3em;
 }
 
 /* Wide */
