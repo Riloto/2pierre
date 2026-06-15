@@ -37,10 +37,10 @@
 					<nav id="nav">
 						<ul class="menu">
 							<li class="current"><a href="/" class="boton"><span>Asistencia</span></a></li>
-							<li><a href="ubicacion" class="boton"><span>Celebración</span></a></li>
-							<li><a href="alojamientos" class="boton"><span>Alojamientos</span></a></li>
-							<li><a href="nosotros" class="boton"><span>Nosotros</span></a></li>
-							<li><a href="playlist" class="boton"><span>Playlist</span></a></li>
+							<li><a href="/ubicacion/" class="boton"><span>Celebración</span></a></li>
+							<li><a href="/alojamientos/" class="boton"><span>Alojamientos</span></a></li>
+							<li><a href="/nosotros/" class="boton"><span>Nosotros</span></a></li>
+							<li><a href="/playlist/" class="boton"><span>Playlist</span></a></li>
 						</ul>
 					</nav>
 
@@ -63,6 +63,19 @@
 				</div>
 			</section>
 
+			<!-- <div class="copiar-contenedor">
+				<p>El matrimonio es un deporte de equipo.</p>
+				<p>Aceptamos patrocinadores.</p>
+				<p>Para quienes nos habeis preguntado como podeis tener un detalle con nosotros, os dejamos aqui todos los datos:</p>
+				<boton>Patrocinar</boton>
+				<span id="textoACopiar">ES21 1234 5678 9012 3456 7890</span>
+				
+				<button id="btnCopiar" onclick="copiarTexto()">
+					<i id="iconoCopiar" class="bi bi-clipboard"></i>
+					<span id="textoBoton">Copiar</span>
+				</button>
+			</div> -->
+
 		<!-- Footer -->
 			<section id="footer">
 				<ul class="icons">
@@ -84,6 +97,30 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- Script Portapapeles -->
+			<script>
+				function copiarTexto() {
+					const texto = document.getElementById("textoACopiar").innerText;
+					const boton = document.getElementById("btnCopiar");
+					const icono = document.getElementById("iconoCopiar");
+					const textoBoton = document.getElementById("textoBoton");
+
+					navigator.clipboard.writeText(texto).then(() => {
+						textoBoton.innerText = "¡Copiado!";
+						boton.classList.add("copiado");
+						icono.className = "bi bi-clipboard-check-fill";
+
+						setTimeout(() => {
+							textoBoton.innerText = "Copiar";
+							boton.classList.remove("copiado");
+							icono.className = "bi bi-clipboard";
+						}, 2000);
+					}).catch(err => {
+						console.error("Error al copiar: ", err);
+					});
+				}
+			</script>
 
 	</body>
 </html>

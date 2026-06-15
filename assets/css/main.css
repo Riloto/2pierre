@@ -2964,6 +2964,45 @@ dialog h3.simbol {
     }
 }
 
+/* Portapapeles */
+.copiar-contenedor {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #f8f9fa;
+  padding: 8px 16px;
+  border: 1px solid #e9ecef;
+  border-radius: 30px;
+}
+
+#textoACopiar {
+  font-family: monospace;
+  font-size: 1rem;
+  color: #212529;
+}
+
+#btnCopiar {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+#btnCopiar:hover {
+  background-color: #0b5ed7;
+}
+
+#btnCopiar.copiado {
+  background-color: #198754;
+}
+
 @import "https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
 
 /* Timeline */
