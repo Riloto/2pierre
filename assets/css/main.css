@@ -328,11 +328,11 @@ input, select, textarea {
 
 	p.nota {
 		font-size: 0.75em;
-		font-weight: 800;
-		margin-top: 1em;
+		font-weight: 500;
+		margin: 1em 0 3em;
     text-align: justify;
-		font-style: italic;
-		color: #cb0d0d;
+		text-decoration: underline;
+		color: #fff;
 	}
 
 /* Container */
