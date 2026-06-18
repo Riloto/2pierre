@@ -63,18 +63,47 @@
 				</div>
 			</section>
 
-			<!-- <div class="copiar-contenedor">
-				<p>El matrimonio es un deporte de equipo.</p>
-				<p>Aceptamos patrocinadores.</p>
-				<p>Para quienes nos habeis preguntado como podeis tener un detalle con nosotros, os dejamos aqui todos los datos:</p>
-				<boton>Patrocinar</boton>
-				<span id="textoACopiar">ES21 1234 5678 9012 3456 7890</span>
-				
-				<button id="btnCopiar" onclick="copiarTexto()">
-					<i id="iconoCopiar" class="bi bi-clipboard"></i>
-					<span id="textoBoton">Copiar</span>
-				</button>
-			</div> -->
+			<section id="second" class="main">
+				<header>
+					<div class="container patrocinio">
+						<p>El matrimonio es un deporte de equipo</p>
+						<h2>Aceptamos patrocinadores</h2>
+						<p>Para quienes nos habeis preguntado como podeis tener un detalle con nosotros, os dejamos aqui todos los datos:</p>
+						<button class="abrirPopupCB boton-popup">Descubre como patrocinarnos</button>
+
+						<dialog id="miPopupCB">
+								<button class="btn-cerrarCB" id="cerrarPopupCB">X</button>
+								<h2>¡¡Gracias por patrocinarnos!!</h2>
+								<p>Con vuestra ayuda colaborareis enormemente a que nuestra boda y nuestra luna de miel sean unos momentos inolvidables</p>
+								<p>Para esto podeis hacer una transferencia al siguiente número de cuenta:</p>
+
+								<div class="copiar-contenedor">
+									<button id="btnCopiar" onclick="copiarTexto()">
+										<span class="icon fa-regular fa-clone"></span>
+									</button>
+
+									<span id="textoACopiar">ES21 1234 5678 9012 3456 7890</span>
+								</div>
+						</dialog>
+
+						<script>
+							const abrirPopupBtnCB = document.querySelectorAll('.abrirPopupCB');
+							const cerrarPopupBtnCB = document.getElementById('cerrarPopupCB');
+							const miPopupCB = document.getElementById('miPopupCB');
+
+							abrirPopupBtnCB.forEach(elemento => {
+								elemento.addEventListener('click', () => {
+									miPopupCB.showModal();
+								});
+							});
+							cerrarPopupBtnCB.addEventListener('click', () => {
+								miPopupCB.close();
+							});
+						</script>
+					</div>
+				</header>
+
+			</section>
 
 		<!-- Footer -->
 			<section id="footer">
@@ -102,22 +131,17 @@
 			<script>
 				function copiarTexto() {
 					const texto = document.getElementById("textoACopiar").innerText;
-					const boton = document.getElementById("btnCopiar");
-					const icono = document.getElementById("iconoCopiar");
-					const textoBoton = document.getElementById("textoBoton");
-
+					const icono = document.querySelector("#btnCopiar .icon");
 					navigator.clipboard.writeText(texto).then(() => {
-						textoBoton.innerText = "¡Copiado!";
-						boton.classList.add("copiado");
-						icono.className = "bi bi-clipboard-check-fill";
+						icono.classList.remove("fa-clone");
+						icono.classList.add("fa-check");
 
 						setTimeout(() => {
-							textoBoton.innerText = "Copiar";
-							boton.classList.remove("copiado");
-							icono.className = "bi bi-clipboard";
-						}, 2000);
+							icono.classList.remove("fa-check");
+							icono.classList.add("fa-clone");
+						}, 4000);
 					}).catch(err => {
-						console.error("Error al copiar: ", err);
+						console.error("Error al copiar el texto: ", err);
 					});
 				}
 			</script>
