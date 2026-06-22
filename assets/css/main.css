@@ -326,8 +326,11 @@ input, select, textarea {
 		font-size: 2em !important;
 	}
 
+	p.aclaracion {
+		margin-top: -1.5em;
+	}
+	
 	p.nota {
-		font-size: 0.75em;
 		font-weight: 500;
 		margin: 1em 0 3em;
     text-align: justify;
@@ -2533,7 +2536,6 @@ input, select, textarea {
 
 	.patrocinio p	{
 		line-height: 1.5em;
-		text-align: justify !important;
 	}
 
 	.patrocinio h2	{
