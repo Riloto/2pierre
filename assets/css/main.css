@@ -1758,6 +1758,14 @@ input, select, textarea {
 			justify-self: center;
 			border-radius: 1em;
 		}
+
+		img.imagen-popup {
+			display: block;
+			justify-self: anchor-center;
+			margin-bottom: 1em;
+			width: 15em;
+		}
+
 /* List */
 
 	ul {
@@ -2539,7 +2547,7 @@ input, select, textarea {
 	}
 
 	.patrocinio h2	{
-		font-size: 2.5em;
+		font-size: 2.5em !important;
 	}
 
 	.abrirPopupCB {
@@ -2912,7 +2920,7 @@ input, select, textarea {
 		}
 
 		.patrocinio h2	{
-			margin: 1em 0;
+			margin: 1em 0 !important;
 		}
 
 		.boton {
