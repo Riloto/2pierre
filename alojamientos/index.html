@@ -18,7 +18,7 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
+			<!-- Header -->
 			<section id="header" class="dark">
 				<header class="home">
 					<h1>Paloma & Ricardo</h1>
@@ -27,7 +27,7 @@
 				</header>
 			</section>
 
-		<!-- First -->
+			<!-- First -->
 			<section id="first" class="main">
 				<header>
 					<div class="post-header">
@@ -42,7 +42,7 @@
 							<li class="current"><a href="/alojamientos/" class="boton"><span>Alojamientos</span></a></li>
 							<li><a href="/nosotros/" class="boton"><span>Nosotros</span></a></li>
 							<li><a href="/playlist/" class="boton"><span>Playlist</span></a></li>
-							<li><a href="/" class="boton"><span>Patrocínanos</span></a></li>
+							<li><a class="abrirPopupCB boton boton-popup"><span>Colabora</span></a></li>
 						</ul>
 					</nav>
 				
@@ -53,7 +53,7 @@
 				</header>
 			</section>
 
-		<!-- Second -->
+			<!-- Second -->
 			<section id="second" class="main">
 				<div class="content dark style2 featured">
 					<div class="container">
@@ -66,12 +66,11 @@
 									Si además te registras en su web, con <strong>VINCCI SMART</strong> accederas a un 12% de descuento extra. Ambos descuentos son acumulables, <strong>un total de un 32% de descuento.</strong></p>
 								
 								<div class="copiar-cupon">
-									<button id="btnCopiarCupon" onclick="copiarTexto()">
+									<button id="btnCopiarCupon" onclick="copiarTexto('textoCupon', 'btnCopiarCupon')">
 										<span class="icon fa-regular fa-clone"></span>
 									</button>
 
-									<!-- <span id="textoACopiar">ES21 1234 5678 9012 3456 7890</span> -->
-									<h4 id="textoACopiar" class="discount-code">BODAPALOMAYRICARDO220527</h4>
+									<h4 id="textoCupon" class="discount-code">BODAPALOMAYRICARDO220527</h4>
 								</div>
 
 								<p class="nota">Desde el hotel nos avisan que el código y la reserva de habitaciones para 2027 no estará disponible hasta Agosto/Septiembre de 2026</p>
@@ -84,7 +83,7 @@
 				</div>
 			</section>
 
-		<!-- Third -->
+			<!-- Third -->
 			<section id="third" class="main">
 				<header class="hoteles">
 					<div class="container">
@@ -190,8 +189,46 @@
 						</div>
 					</div>
 				</div>
-			</section> 
+			</section>
 
+			<section id="second" class="main sponshorship"> 
+				<header class="patrocinio-block">
+					<div class="container patrocinio">
+
+						<dialog id="miPopupCB">
+								<button class="btn-cerrarCB" id="cerrarPopupCB">X</button>
+								<h2>El matrimonio es un deporte de equipo... </br ></h2>
+								<h2>¡¡Gracias por convertiros en patrocinadores oficiales de nuestra luna de miel!!</h2>
+								<p>Para quienes nos habeis preguntado como podeis tener un detalle con nosotros, os dejamos aqui todos los datos</p>
+								<p>Aqui tenéis el número de cuenta para hacer vuestra aportación:</p>
+
+								<div class="copiar-contenedor">
+									<button id="btnCopiar" onclick="copiarTexto('textoCuenta', 'btnCopiar')">
+										<span class="icon fa-regular fa-clone"></span>
+									</button>
+
+									<span id="textoCuenta">ES07 0182 2104 4402 0173 4084</span>
+								</div>
+						</dialog>
+
+						<script>
+							const abrirPopupBtnCB = document.querySelectorAll('.abrirPopupCB');
+							const cerrarPopupBtnCB = document.getElementById('cerrarPopupCB');
+							const miPopupCB = document.getElementById('miPopupCB');
+
+							abrirPopupBtnCB.forEach(elemento => {
+								elemento.addEventListener('click', () => {
+									miPopupCB.showModal();
+								});
+							});
+							cerrarPopupBtnCB.addEventListener('click', () => {
+								miPopupCB.close();
+							});
+						</script>
+					</div>
+				</header>
+			</section>
+			
 		<!-- Footer -->
 			<section id="footer">
 				<ul class="icons">
@@ -216,20 +253,25 @@
 
 			<!-- Script Portapapeles -->
 			<script>
-				function copiarTexto() {
-					const texto = document.getElementById("textoACopiar").innerText;
-					const icono = document.querySelector("#btnCopiarCupon .icon");
-					navigator.clipboard.writeText(texto).then(() => {
-						icono.classList.remove("fa-clone");
-						icono.classList.add("fa-check");
+				function copiarTexto(idTexto, idBoton) {
 
-						setTimeout(() => {
-							icono.classList.remove("fa-check");
-							icono.classList.add("fa-clone");
-						}, 4000);
-					}).catch(err => {
-						console.error("Error al copiar el texto: ", err);
-					});
+						const texto = document.getElementById(idTexto).innerText;
+						const icono = document.querySelector("#" + idBoton + " .icon");
+
+						navigator.clipboard.writeText(texto).then(() => {
+
+								icono.classList.remove("fa-clone");
+								icono.classList.add("fa-check");
+
+								setTimeout(() => {
+										icono.classList.remove("fa-check");
+										icono.classList.add("fa-clone");
+								}, 4000);
+
+						}).catch(err => {
+								console.error("Error al copiar el texto:", err);
+						});
+
 				}
 			</script>
 

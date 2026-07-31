@@ -42,7 +42,7 @@
 							<li><a href="/alojamientos/" class="boton"><span>Alojamientos</span></a></li>
 							<li><a href="/nosotros/" class="boton"><span>Nosotros</span></a></li>
 							<li class="current"><a href="/playlist/" class="boton"><span>Playlist</span></a></li>
-							<li><a href="/" class="boton"><span>Patrocínanos</span></a></li>
+							<li><a class="abrirPopupCB boton boton-popup"><span>Colabora</span></a></li>
 						</ul>
 					</nav>
 
@@ -58,6 +58,44 @@
 				<div class="content dark style5 featured">
 					<iframe class="spotify-player" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0xXjbNb34a75B7ZE0t9Nf7?utm_source=generator&theme=0" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 				</div>
+			</section>
+
+			<section id="second" class="main sponshorship"> 
+				<header class="patrocinio-block">
+					<div class="container patrocinio">
+
+						<dialog id="miPopupCB">
+								<button class="btn-cerrarCB" id="cerrarPopupCB">X</button>
+								<h2>El matrimonio es un deporte de equipo... </br ></h2>
+								<h2>¡¡Gracias por convertiros en patrocinadores oficiales de nuestra luna de miel!!</h2>
+								<p>Para quienes nos habeis preguntado como podeis tener un detalle con nosotros, os dejamos aqui todos los datos</p>
+								<p>Aqui tenéis el número de cuenta para hacer vuestra aportación:</p>
+
+								<div class="copiar-contenedor">
+									<button id="btnCopiar" onclick="copiarTexto()">
+										<span class="icon fa-regular fa-clone"></span>
+									</button>
+
+									<span id="textoACopiar">ES07 0182 2104 4402 0173 4084</span>
+								</div>
+						</dialog>
+
+						<script>
+							const abrirPopupBtnCB = document.querySelectorAll('.abrirPopupCB');
+							const cerrarPopupBtnCB = document.getElementById('cerrarPopupCB');
+							const miPopupCB = document.getElementById('miPopupCB');
+
+							abrirPopupBtnCB.forEach(elemento => {
+								elemento.addEventListener('click', () => {
+									miPopupCB.showModal();
+								});
+							});
+							cerrarPopupBtnCB.addEventListener('click', () => {
+								miPopupCB.close();
+							});
+						</script>
+					</div>
+				</header>
 			</section>
 
 		<!-- Footer -->
@@ -81,6 +119,25 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- Script Portapapeles -->
+			<script>
+				function copiarTexto() {
+					const texto = document.getElementById("textoACopiar").innerText;
+					const icono = document.querySelector("#btnCopiar .icon");
+					navigator.clipboard.writeText(texto).then(() => {
+						icono.classList.remove("fa-clone");
+						icono.classList.add("fa-check");
+
+						setTimeout(() => {
+							icono.classList.remove("fa-check");
+							icono.classList.add("fa-clone");
+						}, 4000);
+					}).catch(err => {
+						console.error("Error al copiar el texto: ", err);
+					});
+				}
+			</script>
 
 	</body>
 </html>

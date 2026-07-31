@@ -42,7 +42,7 @@
 							<li><a href="/alojamientos/" class="boton"><span>Alojamientos</span></a></li>
 							<li><a href="/nosotros/" class="boton"><span>Nosotros</span></a></li>
 							<li><a href="/playlist/" class="boton"><span>Playlist</span></a></li>
-							<li><a href="/" class="boton"><span>Patrocínanos</span></a></li>
+							<li><a class="abrirPopupCB boton boton-popup"><span>Colabora</span></a></li>
 						</ul>
 					</nav>
 				</header>
@@ -102,82 +102,120 @@
 				</header>
 			</section>
 
-	<div class="container">
-    <h2 class="timeline-title">Planning</h2>
+			<div class="container">
+				<h2 class="timeline-title">Planning</h2>
 
-		<div id="timeline">
-			<div class="timeline-item left">
-				<div class="timeline-icon">
-					<img src="../images/arco.png" alt="" />
-				</div>
-				<div class="timeline-content left">
-					<h2>Ceremonia</h2>
-					<p>12:00</p>
+				<div id="timeline">
+					<div class="timeline-item left">
+						<div class="timeline-icon">
+							<img src="../images/arco.png" alt="" />
+						</div>
+						<div class="timeline-content left">
+							<h2>Ceremonia</h2>
+							<p>12:00</p>
+						</div>
+					</div>
+
+					<div class="timeline-item right">
+						<div class="timeline-icon">
+							<img src="../images/tapas.png" alt="" />
+						</div>
+						<div class="timeline-content right">
+							<h2>Cocktail</h2>
+							<p>13:00</p>
+						</div>
+					</div>
+
+					<div class="timeline-item left">
+						<div class="timeline-icon">
+							<img src="../images/cena-romantica.png" alt="" />
+						</div>
+						<div class="timeline-content left">
+							<h2>Plato principal</h2>
+							<p>15:00</p>
+						</div>
+					</div>
+
+					<div class="timeline-item right">
+						<div class="timeline-icon">
+							<img src="../images/baile.png" alt="" />
+						</div>
+						<div class="timeline-content right">
+							<h2>Baile nupcial</h2>
+							<p>18:00</p>
+						</div>
+					</div>
+
+					<div class="timeline-item left grupo">
+						<div class="timeline-icon">
+							<img src="../images/musica-en-vivo (1).png" alt="" />
+						</div>
+						<div class="timeline-content left">
+							<h2>Actuación musical</h2>
+							<p>18:15</p>
+						</div>
+					</div>
+
+					<div class="timeline-item right">
+						<div class="timeline-icon">
+							<img src="../images/dj (1).png" alt="" />
+						</div>
+						<div class="timeline-content right">
+							<h2>DJ</h2>
+							<p>19:30</p>
+						</div>
+					</div>
+
+					<div class="timeline-item left varadero">
+						<div class="timeline-icon">
+							<img src="../images/discoteca.png" alt="" />
+						</div>
+						<div class="timeline-content left">
+							<h2>Fin Fiesta (Varadero)</h2>
+							<p>00:00</p>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
-			<div class="timeline-item right">
-				<div class="timeline-icon">
-					<img src="../images/tapas.png" alt="" />
-				</div>
-				<div class="timeline-content right">
-					<h2>Cocktail</h2>
-					<p>13:00</p>
-				</div>
-			</div>
+			<section id="second" class="main sponshorship"> 
+				<header class="patrocinio-block">
+					<div class="container patrocinio">
 
-			<div class="timeline-item left">
-				<div class="timeline-icon">
-					<img src="../images/cena-romantica.png" alt="" />
-				</div>
-				<div class="timeline-content left">
-					<h2>Plato principal</h2>
-					<p>15:00</p>
-				</div>
-			</div>
+						<dialog id="miPopupCB">
+								<button class="btn-cerrarCB" id="cerrarPopupCB">X</button>
+								<h2>El matrimonio es un deporte de equipo... </br ></h2>
+								<h2>¡¡Gracias por convertiros en patrocinadores oficiales de nuestra luna de miel!!</h2>
+								<p>Para quienes nos habeis preguntado como podeis tener un detalle con nosotros, os dejamos aqui todos los datos</p>
+								<p>Aqui tenéis el número de cuenta para hacer vuestra aportación:</p>
 
-			<div class="timeline-item right">
-				<div class="timeline-icon">
-					<img src="../images/baile.png" alt="" />
-				</div>
-				<div class="timeline-content right">
-					<h2>Baile nupcial</h2>
-					<p>18:00</p>
-				</div>
-			</div>
+								<div class="copiar-contenedor">
+									<button id="btnCopiar" onclick="copiarTexto()">
+										<span class="icon fa-regular fa-clone"></span>
+									</button>
 
-			<div class="timeline-item left grupo">
-				<div class="timeline-icon">
-					<img src="../images/musica-en-vivo (1).png" alt="" />
-				</div>
-				<div class="timeline-content left">
-					<h2>Actuación musical</h2>
-					<p>18:15</p>
-				</div>
-			</div>
+									<span id="textoACopiar">ES07 0182 2104 4402 0173 4084</span>
+								</div>
+						</dialog>
 
-			<div class="timeline-item right">
-				<div class="timeline-icon">
-					<img src="../images/dj (1).png" alt="" />
-				</div>
-				<div class="timeline-content right">
-					<h2>DJ</h2>
-					<p>19:30</p>
-				</div>
-			</div>
+						<script>
+							const abrirPopupBtnCB = document.querySelectorAll('.abrirPopupCB');
+							const cerrarPopupBtnCB = document.getElementById('cerrarPopupCB');
+							const miPopupCB = document.getElementById('miPopupCB');
 
-			<div class="timeline-item left varadero">
-				<div class="timeline-icon">
-					<img src="../images/discoteca.png" alt="" />
-				</div>
-				<div class="timeline-content left">
-					<h2>Fin Fiesta (Varadero)</h2>
-					<p>00:00</p>
-				</div>
-			</div>
-
-		</div>
-	</div>
+							abrirPopupBtnCB.forEach(elemento => {
+								elemento.addEventListener('click', () => {
+									miPopupCB.showModal();
+								});
+							});
+							cerrarPopupBtnCB.addEventListener('click', () => {
+								miPopupCB.close();
+							});
+						</script>
+					</div>
+				</header>
+			</section>
 
 		<!-- Footer -->
 			<section id="footer">
@@ -200,6 +238,25 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- Script Portapapeles -->
+			<script>
+				function copiarTexto() {
+					const texto = document.getElementById("textoACopiar").innerText;
+					const icono = document.querySelector("#btnCopiar .icon");
+					navigator.clipboard.writeText(texto).then(() => {
+						icono.classList.remove("fa-clone");
+						icono.classList.add("fa-check");
+
+						setTimeout(() => {
+							icono.classList.remove("fa-check");
+							icono.classList.add("fa-clone");
+						}, 4000);
+					}).catch(err => {
+						console.error("Error al copiar el texto: ", err);
+					});
+				}
+			</script>
 
 	</body>
 </html>

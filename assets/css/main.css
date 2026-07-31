@@ -2551,7 +2551,7 @@ input, select, textarea {
 	}
 
 	.abrirPopupCB {
-		margin-top: 2em;
+		/*margin-top: 2em;*/
 	}
 
 /* Estilos del Pop-up*/
@@ -2593,7 +2593,7 @@ input, select, textarea {
 	.boton-popup {
 		display: block;
 		justify-self: center;
-		padding: 1em 5em;
+		/*padding: 1em 5em;*/
 		font-size: 1em;
 		font-weight: 800;
 	}
@@ -2843,6 +2843,10 @@ input, select, textarea {
         font-size: 15px;
 			}
 
+			.boton span {
+				/*font-size: 0.70em !important;*/
+			}
+
 		/* Header */
 
 			#header {
@@ -2961,10 +2965,6 @@ input, select, textarea {
 		#miPopupCB p {
 			text-align: justify;
 			font-size: 1.5em;
-		}
-		
-		.boton-popup {
-			padding: 1em 3em;
 		}
 
 		#btnCopiarCupon {
